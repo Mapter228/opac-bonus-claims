@@ -1,0 +1,8 @@
+{
+  "message.opacbonusclaims.bonus_updated": "You now have bonus claims: %s",
+  "item.opacbonusclaims.common_claim": "Bonus Claim +1",
+  "item.opacbonusclaims.uncommon_claim": "Bonus Claim +3",
+  "item.opacbonusclaims.rare_claim": "Bonus Claim +5",
+  "item.opacbonusclaims.epic_claim": "Bonus Claim +10",
+  "item_group.opacbonusclaims.main": "OPAC Bonus Claims"
+}

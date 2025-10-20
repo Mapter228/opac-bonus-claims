@@ -1,0 +1,7 @@
+{
+  "message.opacbonusclaims.bonus_updated": "Теперь у вас бонусных приватов: %s",
+  "item.opacbonusclaims.common_claim": "Бонусный приват +1",
+  "item.opacbonusclaims.uncommon_claim": "Бонусный приват +3",
+  "item.opacbonusclaims.rare_claim": "Бонусный приват +5",
+  "item.opacbonusclaims.epic_claim": "Бонусный приват +10"
+}

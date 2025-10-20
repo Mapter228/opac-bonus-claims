@@ -1,0 +1,33 @@
+modLoader="javafml" #mandatory
+loaderVersion="[47,)" #mandatory
+license="MIT"
+
+[[mods]] #mandatory
+modId="opacbonusclaims" #mandatory
+version="1.0.1" #mandatory
+displayName="OPAC Bonus Claims"
+authors="Mapter"
+description='''
+Addon for Open Parties and Claims that adds items allowing players to obtain bonus claims.
+'''
+
+[[dependencies.opacbonusclaims]] # Forge dependency
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.opacbonusclaims]] # Minecraft dependency
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.opacbonusclaims]] # OPaC dependency
+modId="openpartiesandclaims"
+mandatory=true
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
