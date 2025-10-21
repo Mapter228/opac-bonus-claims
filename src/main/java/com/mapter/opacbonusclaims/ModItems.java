@@ -12,7 +12,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, OpacBonusClaims.MODID);
 
-    // Claim предметы с разными лимитами стека
     public static final RegistryObject<Item> COMMON_CLAIM = ITEMS.register("common_claim",
             () -> new Item(new Item.Properties()
                     .rarity(Rarity.COMMON)));
@@ -33,3 +32,4 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 }
+
