@@ -3,12 +3,13 @@ package com.mapter.opacbonusclaims;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("opacbonusclaims")
+@Mod(OpacBonusClaims.MODID)
 public class OpacBonusClaims {
+    public static final String MODID = "opacbonusclaims";
 
     public OpacBonusClaims() {
-
-        NewItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        NewItems.CREATIVE_MODE_TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        var modBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModItems.registerItems(modBus);
+        ModCreativeTab.registerTabs(modBus);
     }
 }

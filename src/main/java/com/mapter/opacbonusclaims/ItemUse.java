@@ -19,7 +19,7 @@ public class ItemUse {
         ItemStack item = event.getItemStack();
 
 
-        if (item.getItem() == NewItems.COMMON_CLAIM.get()) {
+        if (item.getItem() == ModItems.COMMON_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
                 BonusClaimsAdder.addOneBonusClaim(serverPlayer);
@@ -37,7 +37,7 @@ public class ItemUse {
         }
 
 
-        else if (item.getItem() == NewItems.UNCOMMON_CLAIM.get()) {
+        else if (item.getItem() == ModItems.UNCOMMON_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
                 BonusClaimsAdder.addThreeBonusClaim(serverPlayer);
@@ -56,7 +56,7 @@ public class ItemUse {
         }
 
 
-        else if (item.getItem() == NewItems.RARE_CLAIM.get()) {
+        else if (item.getItem() == ModItems.RARE_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
                 BonusClaimsAdder.addFiveBonusClaim(serverPlayer);
@@ -74,7 +74,7 @@ public class ItemUse {
             }
         }
 
-        else if (item.getItem() == NewItems.EPIC_CLAIM.get()) {
+        else if (item.getItem() == ModItems.EPIC_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
                 BonusClaimsAdder.addTenBonusClaim(serverPlayer);
