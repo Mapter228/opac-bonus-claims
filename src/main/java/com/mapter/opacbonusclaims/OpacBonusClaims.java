@@ -10,6 +10,6 @@ public class OpacBonusClaims {
     public OpacBonusClaims() {
         var modBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.registerItems(modBus);
-        ModCreativeTab.registerTabs(modBus);
+
     }
 }

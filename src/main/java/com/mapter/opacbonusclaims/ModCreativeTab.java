@@ -1,32 +1,15 @@
 package com.mapter.opacbonusclaims;
 
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.registries.Registries;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeTab {
 
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, OpacBonusClaims.MODID);
 
-    public static final RegistryObject<CreativeModeTab> OPAC_BONUS_CLAIMS_TAB =
-            CREATIVE_MODE_TABS.register("opac_bonus_claims_tab",
-                    () -> CreativeModeTab.builder()
-                            .title(Component.translatable("item_group.opacbonusclaims.main"))
-                            .icon(() -> new ItemStack(ModItems.COMMON_CLAIM.get()))
-                            .displayItems((params, output) -> {
-                                output.accept(ModItems.COMMON_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.UNCOMMON_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.RARE_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.EPIC_CLAIM.get().getDefaultInstance());
-                            })
-                            .build());
-
-    public static void registerTabs(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
+    public static final CreativeModeTab OPAC_BONUS_CLAIMS_TAB = new CreativeModeTab("opac_bonus_claims") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.COMMON_CLAIM.get());
+        }
+    };
 }

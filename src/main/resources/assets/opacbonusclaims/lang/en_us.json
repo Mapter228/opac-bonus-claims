@@ -4,5 +4,6 @@
   "item.opacbonusclaims.uncommon_claim": "Bonus Claim +3",
   "item.opacbonusclaims.rare_claim": "Bonus Claim +5",
   "item.opacbonusclaims.epic_claim": "Bonus Claim +10",
-  "item_group.opacbonusclaims.main": "OPAC Bonus Claims"
+
+  "itemGroup.opac_bonus_claims": "OPAC Bonus Claims"
 }

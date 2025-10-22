@@ -57,7 +57,7 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation "curse.maven:open-parties-and-claims-636608:6999169"
+    implementation "curse.maven:open-parties-and-claims-636608:7112737"
 }
 
 tasks.named('processResources', ProcessResources).configure {
