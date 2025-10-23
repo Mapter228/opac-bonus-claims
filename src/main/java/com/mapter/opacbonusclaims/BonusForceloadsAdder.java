@@ -14,7 +14,7 @@ public class BonusForceloadsAdder {
         IPlayerConfigAPI playerConfigAPI = OpenPACServerAPI.get(server)
                 .getPlayerConfigs().getLoadedConfig(player.getUUID());
 
-        int current = playerConfigAPI.getEffective(PlayerConfigOptions.);
+        int current = playerConfigAPI.getEffective(PlayerConfigOptions.BONUS_CHUNK_FORCELOADS);
 
         playerConfigAPI.tryToSet(PlayerConfigOptions.BONUS_CHUNK_FORCELOADS, current + 1);
     }
