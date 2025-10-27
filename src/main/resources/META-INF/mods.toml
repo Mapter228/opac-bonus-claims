@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="opacbonusclaims"
-version="1.0.1"
+version="1.1.0"
 displayName="OPAC Bonus Claims"
 authors="Mapter"
 description='''

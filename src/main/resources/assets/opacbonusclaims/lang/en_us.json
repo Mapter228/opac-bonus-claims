@@ -1,9 +1,14 @@
 {
-  "message.opacbonusclaims.bonus_updated": "You now have bonus claims: %s",
+  "message.opacbonusclaims.bonus_claim_updated": "You now have bonus claims: %s",
+  "message.opacbonusclaims.bonus_forceload_updated": "You now have bonus forceloads: %s",
   "item.opacbonusclaims.common_claim": "Bonus Claim +1",
   "item.opacbonusclaims.uncommon_claim": "Bonus Claim +3",
   "item.opacbonusclaims.rare_claim": "Bonus Claim +5",
   "item.opacbonusclaims.epic_claim": "Bonus Claim +10",
+  "item.opacbonusclaims.common_forceload": "Bonus Forceload +1",
+  "item.opacbonusclaims.uncommon_forceload": "Bonus Forceload +3",
+  "item.opacbonusclaims.rare_forceload": "Bonus Forceload +5",
+  "item.opacbonusclaims.epic_forceload": "Bonus Forceload +10",
 
   "itemGroup.opac_bonus_claims": "OPAC Bonus Claims"
 }
