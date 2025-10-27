@@ -1,6 +1,6 @@
 {
-  "message.opacbonusclaims.bonus_updated": "You now have bonus claims: %s",
-  "message.opacbonusclaims.forceload_updated": "You now have bonus forceloads: %s",
+  "message.opacbonusclaims.bonus_claim_updated": "You now have bonus claims: %s",
+  "message.opacbonusclaims.bonus_forceload_updated": "You now have bonus forceloads: %s",
   "item.opacbonusclaims.common_claim": "Bonus Claim +1",
   "item.opacbonusclaims.uncommon_claim": "Bonus Claim +3",
   "item.opacbonusclaims.rare_claim": "Bonus Claim +5",
