@@ -20,14 +20,17 @@ public class ModCreativeTab {
                             .title(Component.translatable("item_group.opacbonusclaims.main"))
                             .icon(() -> new ItemStack(ModItems.COMMON_CLAIM.get()))
                             .displayItems((params, output) -> {
+                                //CLAIMS
                                 output.accept(ModItems.COMMON_CLAIM.get().getDefaultInstance());
                                 output.accept(ModItems.UNCOMMON_CLAIM.get().getDefaultInstance());
                                 output.accept(ModItems.RARE_CLAIM.get().getDefaultInstance());
                                 output.accept(ModItems.EPIC_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.COMMON_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.UNCOMMON_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.RARE_CLAIM.get().getDefaultInstance());
-                                output.accept(ModItems.EPIC_CLAIM.get().getDefaultInstance());
+
+                                //FORCELOADS
+                                output.accept(ModItems.COMMON_FORCELOAD.get().getDefaultInstance());
+                                output.accept(ModItems.UNCOMMON_FORCELOAD.get().getDefaultInstance());
+                                output.accept(ModItems.RARE_FORCELOAD.get().getDefaultInstance());
+                                output.accept(ModItems.EPIC_FORCELOAD.get().getDefaultInstance());
                             })
                             .build());
 
