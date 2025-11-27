@@ -2,6 +2,7 @@ package com.mapter.opacbonusclaims.item;
 
 import com.mapter.opacbonusclaims.common.BonusChecker;
 import com.mapter.opacbonusclaims.common.BonusForceloadsAdder;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
@@ -24,13 +25,14 @@ public class ItemUseForceload {
         if (item.getItem() == ModItems.COMMON_FORCELOAD.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusForceloadsAdder.addOneBonusForceload(serverPlayer);
+                BonusForceloadsAdder.addBonusForceloads(serverPlayer, 1);
 
                 int bonusUpdated = BonusChecker.getBonusForceloads(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_forceload_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.forceloads.added",
+                                serverPlayer.getName(), 1, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
@@ -42,14 +44,15 @@ public class ItemUseForceload {
         else if (item.getItem() == ModItems.UNCOMMON_FORCELOAD.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusForceloadsAdder.addThreeBonusForceload(serverPlayer);
+                BonusForceloadsAdder.addBonusForceloads(serverPlayer, 3);
 
 
                 int bonusUpdated = BonusChecker.getBonusForceloads(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_forceload_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.forceloads.added",
+                                serverPlayer.getName(), 3, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
@@ -61,14 +64,15 @@ public class ItemUseForceload {
         else if (item.getItem() == ModItems.RARE_FORCELOAD.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusForceloadsAdder.addFiveBonusForceload(serverPlayer);
+                BonusForceloadsAdder.addBonusForceloads(serverPlayer, 5);
 
 
                 int bonusUpdated = BonusChecker.getBonusForceloads(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_forceload_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.forceloads.added",
+                                serverPlayer.getName(), 5, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
@@ -79,15 +83,15 @@ public class ItemUseForceload {
         else if (item.getItem() == ModItems.EPIC_FORCELOAD.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusForceloadsAdder.addTenBonusForceload(serverPlayer);
-
+                BonusForceloadsAdder.addBonusForceloads(serverPlayer, 10);
 
 
                 int bonusUpdated = BonusChecker.getBonusForceloads(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_forceload_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.forceloads.added",
+                                serverPlayer.getName(), 10, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 

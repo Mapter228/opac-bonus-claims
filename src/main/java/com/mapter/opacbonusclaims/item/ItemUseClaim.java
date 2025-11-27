@@ -3,6 +3,7 @@ package com.mapter.opacbonusclaims.item;
 import com.mapter.opacbonusclaims.common.BonusChecker;
 import com.mapter.opacbonusclaims.common.BonusClaimsAdder;
 import com.mapter.opacbonusclaims.common.BonusForceloadsAdder;
+import net.minecraft.ChatFormatting;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -25,13 +26,14 @@ public class ItemUseClaim {
         if (item.getItem() == ModItems.COMMON_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusClaimsAdder.addOneBonusClaim(serverPlayer);
+                BonusClaimsAdder.addBonusClaims(serverPlayer, 1);
 
                 int bonusUpdated = BonusChecker.getBonusClaims(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_claim_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.claims.added",
+                                serverPlayer.getName(), 1, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
@@ -43,14 +45,15 @@ public class ItemUseClaim {
         else if (item.getItem() == ModItems.UNCOMMON_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusClaimsAdder.addThreeBonusClaim(serverPlayer);
+                BonusClaimsAdder.addBonusClaims(serverPlayer, 3);
 
 
                 int bonusUpdated = BonusChecker.getBonusClaims(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_claim_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.claims.added",
+                                serverPlayer.getName(), 3, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
@@ -62,14 +65,15 @@ public class ItemUseClaim {
         else if (item.getItem() == ModItems.RARE_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusClaimsAdder.addFiveBonusClaim(serverPlayer);
+                BonusClaimsAdder.addBonusClaims(serverPlayer, 5);
 
 
                 int bonusUpdated = BonusChecker.getBonusClaims(serverPlayer);
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_claim_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.claims.added",
+                                serverPlayer.getName(), 5, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
@@ -80,7 +84,7 @@ public class ItemUseClaim {
         else if (item.getItem() == ModItems.EPIC_CLAIM.get()) {
             if (player instanceof ServerPlayer serverPlayer) {
 
-                BonusClaimsAdder.addTenBonusClaim(serverPlayer);
+                BonusClaimsAdder.addBonusClaims(serverPlayer, 10);
 
 
 
@@ -88,7 +92,8 @@ public class ItemUseClaim {
 
 
                 serverPlayer.sendSystemMessage(
-                        Component.translatable("message.opacbonusclaims.bonus_claim_updated", bonusUpdated)
+                        Component.translatable("message.opacbonusclaims.claims.added",
+                                serverPlayer.getName(), 10, bonusUpdated).withStyle(ChatFormatting.GREEN)
                 );
 
 
