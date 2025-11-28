@@ -56,8 +56,15 @@ public class BonusForceloadsCommand {
         ChatFormatting color = amount > 0 ? ChatFormatting.GREEN : ChatFormatting.GOLD;
         Component message = Component.translatable(key, target.getName(), Math.abs(amount), newAmount)
             .withStyle(color);
-        context.getSource().sendSuccess(() -> message, false);
-        target.sendSystemMessage(message);
+        boolean samePlayer = context.getSource().getEntity() instanceof ServerPlayer
+            && ((ServerPlayer) context.getSource().getEntity()).getUUID().equals(target.getUUID());
+
+        if (samePlayer) {
+            context.getSource().sendSuccess(() -> message, false);
+        } else {
+            context.getSource().sendSuccess(() -> message, false);
+            target.sendSystemMessage(message);
+        }
         return 1;
     }
 }
