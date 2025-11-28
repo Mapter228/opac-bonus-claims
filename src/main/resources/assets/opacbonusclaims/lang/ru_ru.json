@@ -1,6 +1,4 @@
 {
-  "message.opacbonusclaims.bonus_claim_updated": "Теперь у вас бонусных приватов: %s",
-  "message.opacbonusclaims.bonus_forceload_updated": "Теперь у вас бонусных прогружаемых чанков: %s",
   "item.opacbonusclaims.common_claim": "Бонусный приват +1",
   "item.opacbonusclaims.uncommon_claim": "Бонусный приват +3",
   "item.opacbonusclaims.rare_claim": "Бонусный приват +5",
@@ -8,5 +6,9 @@
   "item.opacbonusclaims.common_forceload": "Бонусный прогружаемый чанк +1",
   "item.opacbonusclaims.uncommon_forceload": "Бонусный прогружаемый чанк +3",
   "item.opacbonusclaims.rare_forceload": "Бонусный прогружаемый чанк +5",
-  "item.opacbonusclaims.epic_forceload": "Бонусный прогружаемый чанк +10"
+  "item.opacbonusclaims.epic_forceload": "Бонусный прогружаемый чанк +10",
+  "message.opacbonusclaims.claims.added": "Для %s добавлено %d бонусных приватов. Всего: %d",
+  "message.opacbonusclaims.claims.removed": "Для %s вычтено %d бонусных приватов. Всего: %d",
+  "message.opacbonusclaims.forceloads.added": "Для %s добавлено %d бонусных прогружаемых чанков. Всего: %d",
+  "message.opacbonusclaims.forceloads.removed": "Для %s вычтено %d бонусных прогружаемых чанков. Всего: %d"
 }
